@@ -11,5 +11,5 @@ for i in range(0,4):
     comm.barrier()
 maxRank = comm.allreduce( rank, op=MPI.MAX )
 if( rank == 0 ):
-    print('Max rank was ',maxRank)
+    print('Max rank was computed to be ',maxRank)
 
